@@ -13,7 +13,7 @@ class Encrypter implements IEncrypter {
   constructor(key: number) {
       this.key = key;
       let caracteresTemp: string[] = [];
-      
+
       // Alfabeto de a-z A-Z ' ' , e .
       for (let i = 32; i < 127; i++) {
           if (String.fromCharCode(i).match(/[a-zA-Z]/g)) {
@@ -106,7 +106,7 @@ let encrypter = new Encrypter(chave);
 
 // Altere o texto aqui
 let plainText = 
-'ola este é um teste, para testar a encriptacao com a cifra de cezar.';
+'ola este e um teste, para testar a encriptacao com a cifra de cezar.';
 
 console.log('chave', encrypter.key)
 
